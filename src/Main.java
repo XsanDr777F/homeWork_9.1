@@ -9,6 +9,10 @@ public class Main {
 
         printBook(vugoranie);
         printBook(sargassuInSpace);
+
+        vugoranie.setPublishingYear(2023);
+
+        printBook(vugoranie);
     }
 
     private static void printBook (Book book){
