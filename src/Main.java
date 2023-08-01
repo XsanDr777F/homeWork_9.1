@@ -7,10 +7,12 @@ public class Main {
         Book vugoranie = new Book("Выгорание", nagosky, 2022);
         Book sargassuInSpace = new Book("Саргассы в космосе", norton, 1992);
 
-        System.out.println(vugoranie.getTitle() +" "+ vugoranie.getAutor().getFirstName() +" "+ vugoranie.getAutor().getLastName()+" "+ vugoranie.getPublishingYear());
+        printBook(vugoranie);
+        printBook(sargassuInSpace);
+    }
 
-        System.out.println(sargassuInSpace.getTitle() +" "+ sargassuInSpace.getAutor().getFirstName() +" "+ sargassuInSpace.getAutor().getLastName()+" "+ sargassuInSpace.getPublishingYear());
-        
+    private static void printBook (Book book){
+        System.out.println(book.getTitle() +" "+ book.getAutor().getFirstName() +" "+ book.getAutor().getLastName()+" "+ book.getPublishingYear());
 
     }
 }
