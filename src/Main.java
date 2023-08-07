@@ -16,7 +16,7 @@ public class Main {
     }
 
     private static void printBook (Book book){
-        System.out.println(book.getTitle() +" "+ book.getAutor().getFirstName() +" "+ book.getAutor().getLastName()+" "+ book.getPublishingYear());
+        System.out.println(book.toString());
 
     }
 }
